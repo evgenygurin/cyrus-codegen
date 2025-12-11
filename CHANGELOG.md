@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Added
+- **Codegen.com platform integration** - Cyrus now supports Codegen AI agents as an alternative to Claude Code. The new `@cyrus/codegen-bridge` package provides a TypeScript bridge to the Codegen Python SDK, enabling seamless integration of Codegen's AI capabilities within the Cyrus workflow. Features include agent task management, status tracking, and webhook event handling
 - **Process status endpoint** - Added `GET /status` endpoint that returns `{"status": "idle"}` or `{"status": "busy"}` to safely determine when Cyrus can be restarted without interrupting active work. ([CYPACK-576](https://linear.app/ceedar/issue/CYPACK-576), [#632](https://github.com/ceedaragents/cyrus/pull/632))
 - **Version logging on startup** - Cyrus now displays the running version when the edge worker starts, making it easier to verify which version is deployed. ([CYPACK-585](https://linear.app/ceedar/issue/CYPACK-585))
 - Added CLI platform mode support to enable in-memory issue tracking for testing and development ([CYPACK-509](https://linear.app/ceedar/issue/CYPACK-509))

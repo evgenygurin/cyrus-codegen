@@ -1,0 +1,7 @@
+# Codegen SDK and dependencies
+codegen>=1.0.0
+codegen-api-client>=1.0.0
+
+# Required for Codegen functionality
+requests>=2.32.3
+pydantic>=2.9.2
